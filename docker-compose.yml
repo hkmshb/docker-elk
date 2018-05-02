@@ -24,10 +24,14 @@ services:
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
       - ./logstash/mapping:/usr/share/logstash/mapping:ro
       - ./logstash/sql:/usr/share/logstash/sql:ro
+      - ./logstash/_logs:/usr/share/logstash/logs:ro
     ports:
       - "5000:5000"
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      JDBC_STRING: jbdc:postgresql://localhost/eha
+      PSQL_USER: 'hkmshb'
+      PSQL_PASSWORD: '0p3n'
     networks:
       - elk
     depends_on:
