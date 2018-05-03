@@ -29,7 +29,7 @@ services:
       - "5000:5000"
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
-      JDBC_STRING: jbdc:postgresql://localhost/eha
+      JDBC_STRING: jdbc:postgresql://host.docker.internal/eha
       PSQL_USER: 'hkmshb'
       PSQL_PASSWORD: '0p3n'
     networks:
