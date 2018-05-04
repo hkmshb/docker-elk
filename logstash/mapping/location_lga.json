@@ -1,11 +1,11 @@
 {
-  "template": "location-state",
+  "template": "location-lga",
   "order": 1,
   "settings": {
     "number_of_shards": 5
   },
   "mappings": {
-    "location-state": {
+    "location-lga": {
       "properties": {
         "@timestamp": {
           "type": "date"
@@ -52,7 +52,7 @@
             }
           }
         },
-        "capcity": {
+        "parent_code": {
           "type": "text",
           "fields": {
             "keyword": {
@@ -61,7 +61,16 @@
             }
           }
         },
-        "geozone": {
+        "parent_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "amapcode": {
           "type": "text",
           "fields": {
             "keyword": {
