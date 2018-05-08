@@ -1,0 +1,181 @@
+{
+  "template": "settlement-hamletareas",
+  "order": 1,
+  "settings": {
+    "number_of_shards": 5
+  },
+  "mappings": {
+    "settlement-hamletareas": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "@version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "globalid": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "id": {
+          "type": "long"
+        },
+        "timestamp": {
+          "type": "date"
+        },
+        "building_assessment_intact": {
+          "type": "integer"
+        },
+        "building_assessment_inhabited": {
+          "type": "integer"
+        },
+        "building_assessment_confidence": {
+          "type": "integer"
+        },
+        "building_assessment_date": {
+          "type": "date"
+        },
+        "settlement_id":  {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "settlement_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "settlement_objectid": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "settlement_name_calc": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "major_road_distance": {
+          "type": "double"
+        },
+        "tertiary_road_distance": {
+          "type": "double"
+        },
+        "lga_distance": {
+          "type": "double"
+        },
+        "ward_distance": {
+          "type": "double"
+        },
+        "ward_code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ward_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "lga_code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "lga_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "state_code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "state_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "weight": {
+          "type": "double"
+        },
+        "nbdenominator": {
+          "type": "integer"
+        },
+        "source": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "locked": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "settlement_type": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
