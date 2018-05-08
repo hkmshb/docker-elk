@@ -1,0 +1,64 @@
+{
+  "template": "settlement-hamletareas",
+  "order": 1,
+  "settings": {
+    "number_of_shards": 5
+  },
+  "mappings": {
+    "settlement-hamletareas": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "@version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "globalid": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "id": {
+          "type": "long"
+        },
+        "timestamp": {
+          "type": "date"
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "type": {
+          "type": "integer"
+        },
+        "source": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "settlement_type": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
