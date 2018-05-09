@@ -1,11 +1,11 @@
 {
-  "template": "settlement-hamletareas",
+  "template": "settlement-nonresidentialarea",
   "order": 1,
   "settings": {
     "number_of_shards": 5
   },
   "mappings": {
-    "settlement-hamletareas": {
+    "settlement-nonresidentialarea": {
       "properties": {
         "@timestamp": {
           "type": "date"
