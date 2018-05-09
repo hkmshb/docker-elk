@@ -54,9 +54,6 @@
               "ignore_above": 256
             }
           }
-        },
-        "settlement_type": {
-          "type": "keyword"
         }
       }
     }
