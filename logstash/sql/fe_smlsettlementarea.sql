@@ -17,7 +17,7 @@ SELECT
      bw.lgacode as "lga_code",
      bl.lganame as "lga_name",
      bl.statecode as "state_code",
-     bl.statename as "state_name",
+     bs.statename as "state_name",
      fe.weight, fe.nbdenominator, fe.source
 FROM nigeria_master_trunk_rev_head.fe_smlsettlementareas fe
 JOIN nigeria_master_trunk_rev_head.boundary_vaccwards bw
