@@ -7,7 +7,7 @@ services:
       context: elasticsearch/
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
-      - ./elasticsearch/_data:/usr/share/elasticsearch/data
+      - ./elasticsearch/../_esdata:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
