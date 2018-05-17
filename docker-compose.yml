@@ -21,6 +21,7 @@ services:
       context: logstash/
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/dictionary:/usr/share/logstash/dictionary:ro
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
       - ./logstash/mapping:/usr/share/logstash/mapping:ro
       - ./logstash/sql:/usr/share/logstash/sql:ro
