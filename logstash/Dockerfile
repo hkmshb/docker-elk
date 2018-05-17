@@ -5,4 +5,4 @@ FROM docker.elastic.co/logstash/logstash-oss:6.2.3
 # Example: RUN logstash-plugin install logstash-filter-json
 
 USER root
-RUN curl -L -o /usr/share/java/postgresql-9.4-1201.jdbc41.jar http://jdbc.postgresql.org/download/postgresql-9.4-1201.jdbc41.jar
+RUN curl -L -o /usr/share/java/postgresql-42.1.4.jar https://jdbc.postgresql.org/download/postgresql-42.1.4.jre6.jar
