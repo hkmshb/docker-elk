@@ -106,7 +106,7 @@
                         }
                     }
                 },
-				"poi_type": {
+                "poi_type": {
                     "type": "text",
                     "fields": {
                         "keyword": {
