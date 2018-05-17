@@ -88,7 +88,7 @@
                 "timestamp": {
                     "type": "date"
                 },
-                "type": {
+                "hf_type": {
                     "type": "text",
                     "fields": {
                         "keyword": {
