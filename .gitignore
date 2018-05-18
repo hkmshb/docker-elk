@@ -1,3 +1,5 @@
+.tmp
 .DS_Store
-_esdata
+_esdata*
+elasticsearch/_data
 logstash/_logs
