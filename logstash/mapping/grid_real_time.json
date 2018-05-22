@@ -2,7 +2,10 @@
   "template": "grid_real_time",
   "order": 1,
   "settings": {
-    "number_of_shards": 5
+    "number_of_shards": 5,
+    "blocks": {
+        "read_only_allow_delete": null
+    }
   },
   "mappings": {
     "grid_real_time": {
