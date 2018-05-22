@@ -5,6 +5,6 @@ SELECT
      bl.statecode as "parent_code",
      bs.statename as "parent_name",
      bl.amapcode, bl.source
-FROM nigeria_master_trunk_rev_head.boundary_vacclgas bl
-JOIN nigeria_master_trunk_rev_head.boundary_vaccstates bs
+FROM grid_data.boundary_vacclgas bl
+JOIN grid_data.boundary_vaccstates bs
   ON (bl.statecode = bs.statecode)

@@ -10,10 +10,10 @@ SELECT
     lg.lganame as "LGA",
     wd.wardname as "Ward",
     sta.statename as "State"
-FROM nigeria_master_trunk_rev_head.fc_settlementpt st
-INNER JOIN nigeria_master_trunk_rev_head.boundary_vaccwards wd
+FROM grid_data.fc_settlementpt st
+INNER JOIN grid_data.boundary_vaccwards wd
         ON (wd.wardcode = st.wardcode)
-INNER JOIN nigeria_master_trunk_rev_head.boundary_vacclgas lg
+INNER JOIN grid_data.boundary_vacclgas lg
         ON (lg.lgacode = wd.lgacode)
-INNER JOIN nigeria_master_trunk_rev_head.boundary_vaccstates sta
+INNER JOIN grid_data.boundary_vaccstates sta
         ON (sta.statecode = lg.statecode)

@@ -7,8 +7,8 @@ SELECT
      bl.statecode as "state_code",
      bs.statename as "state_name",
      bw.amapcode, bw.urban, bw.source
-FROM nigeria_master_trunk_rev_head.boundary_vaccwards bw
-JOIN nigeria_master_trunk_rev_head.boundary_vacclgas bl
+FROM grid_data.boundary_vaccwards bw
+JOIN grid_data.boundary_vacclgas bl
   ON (bw.lgacode = bl.lgacode)
-JOIN nigeria_master_trunk_rev_head.boundary_vaccstates bs
+JOIN grid_data.boundary_vaccstates bs
   ON (bl.statecode = bs.statecode)

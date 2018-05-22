@@ -20,10 +20,10 @@ SELECT
      bs.statename as "state_name",
      fe.weight, fe.nbdenominator, fe.source,
      fe.locked
-FROM nigeria_master_trunk_rev_head.fe_hamletareas fe
-JOIN nigeria_master_trunk_rev_head.boundary_vaccwards bw
+FROM grid_data.fe_hamletareas fe
+JOIN grid_data.boundary_vaccwards bw
   ON (fe.wardcode = bw.wardcode)
-JOIN nigeria_master_trunk_rev_head.boundary_vacclgas bl
+JOIN grid_data.boundary_vacclgas bl
   ON (bw.lgacode = bl.lgacode)
-JOIN nigeria_master_trunk_rev_head.boundary_vaccstates bs
+JOIN grid_data.boundary_vaccstates bs
   ON (bl.statecode = bs.statecode)

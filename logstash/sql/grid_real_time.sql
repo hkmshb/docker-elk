@@ -14,9 +14,9 @@ SELECT
     sw.starttime, sw.point_type,
     sw.latitude, sw.longitude
 FROM public.grid_sw_form1 sw
-LEFT JOIN nigeria_master_trunk_rev_head.boundary_vaccwards wd
+LEFT JOIN grid_data.boundary_vaccwards wd
        ON (wd.wardcode = sw.ward)
-LEFT JOIN nigeria_master_trunk_rev_head.boundary_vacclgas lg
+LEFT JOIN grid_data.boundary_vacclgas lg
        ON (lg.lgacode = wd.lgacode)
-LEFT JOIN nigeria_master_trunk_rev_head.boundary_vaccstates st
+LEFT JOIN grid_data.boundary_vaccstates st
        ON (st.statecode = lg.statecode)

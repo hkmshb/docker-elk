@@ -7,10 +7,10 @@ SELECT
     ward.lgacode, ward.wardname,
     lga.lganame, lga.statecode,
     state.statename 
-FROM nigeria_master_trunk_rev_head.fc_poi_church hf
-INNER JOIN nigeria_master_trunk_rev_head.boundary_vaccwards ward
+FROM grid_data.fc_poi_church hf
+INNER JOIN grid_data.boundary_vaccwards ward
         ON (ward.wardcode = hf.wardcode)
-INNER JOIN nigeria_master_trunk_rev_head.boundary_vacclgas lga
+INNER JOIN grid_data.boundary_vacclgas lga
         ON (lga.lgacode = ward.lgacode)
-INNER JOIN nigeria_master_trunk_rev_head.boundary_vaccstates state
+INNER JOIN grid_data.boundary_vaccstates state
         ON (state.statecode = lga.statecode)
