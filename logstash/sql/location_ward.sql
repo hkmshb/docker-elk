@@ -1,12 +1,13 @@
 SELECT 
      bw.id, bw.globalid, bw.timestamp,
-     bw.wardcode as "code",
-     bw.wardname as "name",
-     bw.lgacode as "parent_code",
-     bl.lganame as "parent_name",
-     bl.statecode as "state_code",
-     bs.statename as "state_name",
-     bw.amapcode, bw.urban, bw.source
+     TRIM(bw.wardcode) as "code",
+     TRIM(bw.wardname) as "name",
+     TRIM(bw.lgacode) as "parent_code",
+     TRIM(bl.lganame) as "parent_name",
+     TRIM(bl.statecode) as "state_code",
+     TRIM(bs.statename) as "state_name",
+     TRIM(bw.amapcode), TRIM(bw.urban),
+     TRIM(bw.source)
 FROM grid_data.boundary_vaccwards bw
 JOIN grid_data.boundary_vacclgas bl
   ON (bw.lgacode = bl.lgacode)

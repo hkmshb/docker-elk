@@ -1,15 +1,15 @@
 SELECT
     st.id,
-    st.editor,
+    TRIM(st.editor),
     st.globalid,
     st.timestamp,
-    st.source,
-    st.wardcode,
-    st.settlementname,
-    st.settlementid,
-    lg.lganame as "LGA",
-    wd.wardname as "Ward",
-    sta.statename as "State"
+    TRIM(st.source),
+    TRIM(st.wardcode),
+    TRIM(st.settlementname),
+    TRIM(st.settlementid),
+    TRIM(lg.lganame) as "LGA",
+    TRIM(wd.wardname) as "Ward",
+    TRIM(sta.statename) as "State"
 FROM grid_data.fc_settlementpt st
 INNER JOIN grid_data.boundary_vaccwards wd
         ON (wd.wardcode = st.wardcode)

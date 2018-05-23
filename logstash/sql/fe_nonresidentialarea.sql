@@ -2,7 +2,7 @@ SELECT
      fe.id,
      fe.globalid,
      fe.timestamp,
-     fe.name,
+     TRIM(fe.name),
      fe.type as "type_code",
-     fe.source
+     TRIM(fe.source)
 FROM grid_data.fe_nonresidentialarea fe
