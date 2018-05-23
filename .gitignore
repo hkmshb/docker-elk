@@ -1,4 +1,5 @@
 .tmp
+.env
 .DS_Store
 _esdata*
 elasticsearch/_data
