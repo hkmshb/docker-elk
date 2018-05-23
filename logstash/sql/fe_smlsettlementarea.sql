@@ -18,7 +18,8 @@ SELECT
      TRIM(bl.lganame) as "lga_name",
      TRIM(bl.statecode) as "state_code",
      TRIM(bs.statename) as "state_name",
-     fe.weight, fe.nbdenominator, TRIM(fe.source)
+     fe.weight, fe.nbdenominator, 
+     TRIM(fe.source) as "source"
 FROM grid_data.fe_smlsettlementareas fe
 JOIN grid_data.boundary_vaccwards bw
   ON (fe.wardcode = bw.wardcode)

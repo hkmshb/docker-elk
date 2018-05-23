@@ -6,8 +6,9 @@ SELECT
      TRIM(bl.lganame) as "parent_name",
      TRIM(bl.statecode) as "state_code",
      TRIM(bs.statename) as "state_name",
-     TRIM(bw.amapcode), TRIM(bw.urban),
-     TRIM(bw.source)
+     TRIM(bw.amapcode) as "amapcode",
+     TRIM(bw.urban) as "urban",
+     TRIM(bw.source) as "source"
 FROM grid_data.boundary_vaccwards bw
 JOIN grid_data.boundary_vacclgas bl
   ON (bw.lgacode = bl.lgacode)

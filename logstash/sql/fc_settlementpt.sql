@@ -1,12 +1,10 @@
 SELECT
-    st.id,
-    TRIM(st.editor),
-    st.globalid,
-    st.timestamp,
-    TRIM(st.source),
-    TRIM(st.wardcode),
-    TRIM(st.settlementname),
-    TRIM(st.settlementid),
+    st.id, st.globalid, st.timestamp,
+    TRIM(st.editor) as "editor",
+    TRIM(st.source) as "source",
+    TRIM(st.wardcode) as "wardcode",
+    TRIM(st.settlementname) as "settlementname",
+    TRIM(st.settlementid) as "settlementid",
     TRIM(lg.lganame) as "LGA",
     TRIM(wd.wardname) as "Ward",
     TRIM(sta.statename) as "State"
