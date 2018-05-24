@@ -1,10 +1,7 @@
 {"template": "poi_market",
   "order": 1,
   "settings": {
-    "number_of_shards": 5,
-    "blocks": {
-      "read_only_allow_delete": null
-    }
+    "number_of_shards": 5
   },
   "mappings": {
     "poi_market": {
