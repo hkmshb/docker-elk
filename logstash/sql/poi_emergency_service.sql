@@ -2,7 +2,7 @@ SELECT
     fc.id, fc.globalid, fc.timestamp,
     ST_X (ST_Transform (fc.geom, 4326))::float as longitude,
     ST_Y (ST_Transform (fc.geom, 4326))::float as latitude,
-    TRIM(fc.source) as "source"
+    TRIM(fc.source) as "source",
     TRIM(fc.emergency_service_name) as "service_name",
     TRIM(fc.type_emergency_service) as "service_type",
     TRIM(fc.ambulance) as "ambulance",
