@@ -1,6 +1,6 @@
 SELECT 
      p.globalid,
-     'state' as "pop_type",
+     'state' as "admin_level",
      null as "settlement_name",
      TRIM(p.statecode) as "state_code",
      TRIM(p.statename) as "state_name",
@@ -20,7 +20,7 @@ SELECT
 FROM vts_pop.northcentral_pop_state as p
 UNION SELECT 
      p.globalid,
-     'lga' as "pop_type",
+     'lga' as "admin_level",
      null as "settlement_name",
      TRIM(p.statecode) as "state_code",
      null as "state_name",
@@ -40,7 +40,7 @@ UNION SELECT
 FROM vts_pop.northcentral_pop_lga as p
 UNION SELECT
      p.globalid,
-     'ward' as "pop_type",
+     'ward' as "admin_level",
      null as "settlement_name",
      null as "state_code",
      null as "state_name",
@@ -60,7 +60,7 @@ UNION SELECT
 FROM vts_pop.northcentral_pop_wards as p
 UNION SELECT 
      p.globalid,
-     'settlement' as "pop_type",
+     'settlement' as "admin_level",
      TRIM(p.settlementname) as "settlement_name",
      null as "state_code",
      null as "state_name",
