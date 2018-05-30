@@ -1,10 +1,10 @@
-{"template": "pop_north_central",
+{"template": "pop_north_west",
   "order":    1,
   "settings": {
     "number_of_shards": 5
   },
   "mappings": {
-    "pop_north_central": {
+    "pop_north_west": {
       "properties": {
         "@timestamp": {
           "type": "date"
