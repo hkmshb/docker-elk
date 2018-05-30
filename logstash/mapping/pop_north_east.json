@@ -1,0 +1,150 @@
+{"template": "pop_north_east",
+  "order":    1,
+  "settings": {
+    "number_of_shards": 5
+  },
+  "mappings": {
+    "pop_north_east": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "@version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "globalid": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "admin_level": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "settlement_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "state_code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "state_name": {
+          "type": "long"
+        },
+        "lga_code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "lga_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ward_code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ward_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "one_four": {
+          "type": "float"
+        },
+        "five_nine": {
+          "type": "float"
+        },
+        "ten_fourteen": {
+          "type": "float"
+        },
+        "fifteen_nineteen": {
+          "type": "float"
+        },
+        "twenty_twentyfour": {
+          "type": "float"
+        },
+        "twentyfive_twentynine": {
+          "type": "float"
+        },
+        "thirty_thirtyfour": {
+          "type": "float"
+        },
+        "thirtyfive_thirtynine": {
+          "type": "float"
+        },
+        "forty_fortyfour": {
+          "type": "float"
+        },
+        "fortyfive_fortynine": {
+          "type": "float"
+        },
+        "fifty_fiftyfour": {
+          "type": "float"
+        },
+        "fiftyfive_fiftynine": {
+          "type": "float"
+        },
+        "sixty_sixtyfour": {
+          "type": "float"
+        },
+        "sixtyfive_sixtynine": {
+          "type": "float"
+        },
+        "seventy_seventyfour": {
+          "type": "float"
+        },
+        "seventyfive_hundred": {
+          "type": "float"
+        },
+        "total_pop": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}
